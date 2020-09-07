@@ -5,7 +5,6 @@
  */
 
 import de.buccaneersdan.NanoBenchmark;
-import de.buccaneersdan.TimeTools;
 import org.junit.*;
 
 import java.util.Date;
@@ -59,9 +58,9 @@ public class NanoBenchmarkTest
 	{
 		System.out.println("getElapsedDuration");
 		instance.stop();
-		TimeTools.Duration expResult = new TimeTools.Duration(null, null, 1, null);
+		NanoBenchmark.Duration expResult = new NanoBenchmark.Duration(null, null, 1, null);
 
-		TimeTools.Duration result = instance.getElapsedDuration();
+		NanoBenchmark.Duration result = instance.getElapsedDuration();
 		assertEquals(expResult.getSeconds(), result.getSeconds());
 	}
 
