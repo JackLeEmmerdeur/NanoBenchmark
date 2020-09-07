@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import de.buccaneersdan.NanoBenchmark;
+import de.jackleemmerdeur.NanoBenchmark;
 import org.junit.*;
 
 import java.util.Date;
